@@ -23,26 +23,24 @@
   </head>
   <body ng-app="starter" ng-controller="MainCtrl">
 
-    <button on-drag-right="onDragRight()" class="button">Test</button>
-
-  <ion-content>
+    <ion-content  scrollbar-x="false" scrollbar-y="false" >
 
 
-    <div class="list card" ng-repeat="item in data">
+        <div class="list card" ng-repeat="item in data">
 
-      <div class="item">
-        <h2>{{item.title}}</h2>
-      </div>
+          <div class="item">
+            <h2>{{item.title}}</h2>
+          </div>
 
-      <div class="item item-body">
-        <img class="full-image" src="http://qet.com/img/{{item.img}}">
-        <p>
-          {{item.body}}
-        </p>
-      </div>
+          <div class="item item-body">
+            <img class="full-image" src="http://qet.brubles.com.br/img/{{item.img}}">
+            <p>
+              {{item.body}}
+            </p>
+          </div>
 
-    </div>
-    </ion-content>
+        </div>
+      </ion-content>
 
 
   </body>
